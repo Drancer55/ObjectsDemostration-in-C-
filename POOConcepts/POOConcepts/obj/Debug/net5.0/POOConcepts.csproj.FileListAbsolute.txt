@@ -1,0 +1,16 @@
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\bin\Debug\net5.0\POOConcepts.exe
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\bin\Debug\net5.0\POOConcepts.deps.json
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\bin\Debug\net5.0\POOConcepts.runtimeconfig.json
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\bin\Debug\net5.0\POOConcepts.runtimeconfig.dev.json
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\bin\Debug\net5.0\POOConcepts.dll
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\bin\Debug\net5.0\ref\POOConcepts.dll
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\bin\Debug\net5.0\POOConcepts.pdb
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\obj\Debug\net5.0\POOConcepts.csproj.AssemblyReference.cache
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\obj\Debug\net5.0\POOConcepts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\obj\Debug\net5.0\POOConcepts.AssemblyInfoInputs.cache
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\obj\Debug\net5.0\POOConcepts.AssemblyInfo.cs
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\obj\Debug\net5.0\POOConcepts.csproj.CoreCompileInputs.cache
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\obj\Debug\net5.0\POOConcepts.dll
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\obj\Debug\net5.0\ref\POOConcepts.dll
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\obj\Debug\net5.0\POOConcepts.pdb
+C:\Users\Z440\Documents\Practice C#\POOConcepts\POOConcepts\obj\Debug\net5.0\POOConcepts.genruntimeconfig.cache

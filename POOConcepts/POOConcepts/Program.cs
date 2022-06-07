@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace POOConcepts
 {
@@ -16,11 +17,11 @@ namespace POOConcepts
                 BirthDay = new Date(1990, 12, 28),
                 Hiringdate = new Date(2022, 6, 1),
                 IsActive = true,
-                Salary= 10000.50M //M = money
+                Salary = 10000.50M //M = money
             };
             Employee employee2 = new CommissionEmployee() //new dispara el contructor
             {
-                Id = 1010,
+                Id = 1020,
                 FirstName = "Ilse",
                 LastName = "Martinez",
                 BirthDay = new Date(1994, 11, 1),
@@ -29,9 +30,68 @@ namespace POOConcepts
                 Sales = 15000.50M,
                 CommissionPorcentage = 0.03F //constante Float (porcentaje)
             };
-            Console.WriteLine(employee1); // muestra los datos del empleado1
-            Console.WriteLine(employee2); // muestra los datos del empleado1
+            Employee employee3 = new HourlyEmployee()
+            {
+                Id = 1030,
+                FirstName = "Erika",
+                LastName = "Hernandez",
+                BirthDay = new Date(1985, 10, 10),
+                Hiringdate = new Date(2021, 11, 2),
+                IsActive = true,
+                HourValue = 25000.50M,
+                Hours = 100.2F //constante Float (porcentaje de la hora trabajada)
+            };
+            Employee employee4 = new BaseCommissionEmployee()
+            {
+                Id = 1040,
+                FirstName = "Liliana",
+                LastName = "Gonzales",
+                BirthDay = new Date(1988, 11, 11),
+                Hiringdate = new Date(2021, 11, 1),
+                IsActive = true,
+                Base = 8000M, 
+                Sales = 10000M,
+                CommissionPorcentage = 0.10F
+            };
 
+            //Crear lista de empleados: Interface = comienza con "I" (Icollection), se imprimen en un ciclo.
+            ICollection<Employee> employees = new List<Employee>()
+            {
+                employee1, employee2, employee3, employee4
+            };
+            // Calcular el valor total de la Nómina
+            decimal payroll = 0;
+            foreach (Employee employee in employees)
+            {
+                Console.WriteLine(employee);
+                payroll += employee.GetValueToPay(); //se suma la nómina
+            }
+            Console.WriteLine("               ===============");
+            Console.WriteLine($"TOTAL:        {$"{payroll:C2}", 15}"); //doble interpolación para alinear los números, 15 caracteres a la izq.
+
+            Invoice invoice = new Invoice()
+            {
+                Description = "Iphone13",
+                Id = 1,
+                Price = 2500M,
+                Quantity = 10
+            };
+            Invoice invoice2 = new Invoice()
+            {
+                Description = "Meat Premium",
+                Id = 2,
+                Price = 1000M,
+                Quantity = 9
+            };
+
+            Console.WriteLine(invoice);
+            Console.WriteLine(invoice2);
+
+            //Empleados individuales, escritos uno a uno
+            //Console.WriteLine(employee1); // muestra los datos del empleado1
+            //Console.WriteLine(employee2); // muestra los datos del empleado2
+            //Console.WriteLine(employee3); // muestra los datos del empleado3
+            //Console.WriteLine(employee4); // muestra los datos del empleado4
 
             // Date date1 = new Date(2022, 6, 3);
             //la clase date hereda de la clase Object

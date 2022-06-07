@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace POOConcepts
 {
-    public abstract class Employee
+    public abstract class Employee : Ipay //implementa GetValueToPay() indirectamente por ser abstracto (line 25)
     {
         //get = obtener; set = asignar el valor
         public int Id { get; set; }
@@ -22,7 +22,7 @@ namespace POOConcepts
 
         public bool IsActive { get; set; }
 
-        public abstract decimal GetValueToPay();
+        public abstract decimal GetValueToPay(); //une el pago entre una factura y un empleado
 
         public override string ToString()
         {
